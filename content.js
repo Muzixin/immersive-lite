@@ -50,19 +50,21 @@
       :host { all: initial; }
       .btn {
         width: 44px; height: 44px; border-radius: 50%;
-        background: rgba(23, 30, 46, .82);
+        background: linear-gradient(135deg, #5b6cff, #405ceb);
         color: #fff; font: 600 19px/44px system-ui, sans-serif;
         text-align: center; cursor: grab; user-select: none;
         touch-action: none;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+        box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .45), 0 2px 10px rgba(0, 0, 0, .35);
         transition: transform .15s, background .15s, opacity .15s;
-        opacity: .62; position: relative;
+        opacity: .92; position: relative;
       }
       .btn:hover { opacity: 1; transform: scale(1.08); }
       .btn.dragging { cursor: grabbing; transition: none; transform: none; }
-      .btn.done { background: rgba(31, 111, 92, .88); opacity: .8; }
+      .btn.done {
+        background: linear-gradient(135deg, #21a179, #178a64);
+      }
       .btn.done:hover { opacity: 1; }
-      .btn.error { background: rgba(158, 42, 43, .9); }
+      .btn.error { background: linear-gradient(135deg, #d64545, #b93232); }
       .ring {
         display: none; position: absolute; inset: 12px;
         border: 2.5px solid rgba(255, 255, 255, .35);
